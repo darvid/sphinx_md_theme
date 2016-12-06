@@ -1,0 +1,15 @@
+{%- if builder != 'singlehtml' %}
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+  <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+    <i class="material-icons">search</i>
+  </label>
+  <div class="mdl-textfield__expandable-holder">
+    <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+      <input class="mdl-textfield__input" type="text" id="search" name="q">
+      <label class="mdl-textfield__label" for="search">Enter your query...</label>
+    </form>
+  </div>
+</div>
+{%- endif %}

@@ -1,0 +1,38 @@
+{
+  "name": "sphinx-md-theme",
+  "version": "0.1a1",
+  "homepage": "https://github.com/darvid/sphinx_md_theme",
+  "authors": [
+    "David Gidwani <david.gidwani@gmail.com>"
+  ],
+  "description": "Material design theme for Sphinx.",
+  "license": "MIT",
+  "main": [],
+  "ignore": [
+    "docs",
+    "demo_docs",
+    ".gitignore",
+    ".DS_Store",
+    ".sass-cache*",
+    ".bowerrc",
+    "bower.json",
+    "package.json",
+    "Gruntfile.js",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "lato-googlefont": "*",
+    "robotoslab-googlefont": "*",
+    "inconsolata-googlefont": "*",
+    "font-awesome": "4.2.0",
+    "material-design-lite": "^1.1.3",
+    "material-design-icons": "^2.2.3",
+    "roboto-fontface": "^0.6.0",
+    "easyfont-roboto-mono": "easyfont/roboto-mono"
+  }
+}
