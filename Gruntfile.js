@@ -89,7 +89,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'sass',
+          cwd: 'src/scss',
           src: ['*.scss'],
           dest: 'src/sphinx_md_theme/templates/material_design/static/css',
           ext: '.css'
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          cwd: 'scss',
+          cwd: 'src/scss',
           src: ['*.scss'],
           dest: 'src/sphinx_md_theme/templates/material_design/static/css',
           ext: '.css'
