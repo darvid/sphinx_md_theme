@@ -40,27 +40,6 @@
     <div class="mdl-layout-spacer"></div>
     <div class="mdl-layout-spacer"></div>
     {% include "searchbox.html" %}
-    <nav class="mdl-navigation mdl-layout--large-screen-only">
-      {% if pagename != "search" %}
-          {% if display_github %}
-          {% if check_meta and 'github_url' in meta %}
-            <!-- User defined GitHub URL -->
-            <a href="{{ meta['github_url'] }}" class="mdl-navigation__link"> Edit on GitHub</a>
-          {% else %}
-            <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}"
-               class="mdl-navigation__link">Edit on GitHub</a>
-          {% endif %}
-        {% elif display_bitbucket %}
-          {% if check_meta and 'bitbucket_url' in meta %}
-            <!-- User defined Bitbucket URL -->
-            <a href="{{ meta['bitbucket_url'] }}" class="mdl-navigation__link"> Edit on Bitbucket</a>
-          {% else %}
-            <a href="https://bitbucket.org/{{ bitbucket_user }}/{{ bitbucket_repo }}/src/{{ bitbucket_version}}{{ conf_py_path }}{{ pagename }}{{ suffix }}"
-               class="mdl-navigation__link">Edit on Bitbucket</a>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    </nav>
   </div>
 </header>
 <!-- <div class="mdl-layout__drawer">
